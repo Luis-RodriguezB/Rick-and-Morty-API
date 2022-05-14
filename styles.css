@@ -5,7 +5,8 @@
 }
 
 html, body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
 
 ul {
@@ -13,7 +14,6 @@ ul {
 }
 
 .nav-bar {
-    margin-bottom: 40px;
     padding-top: 50px;
 }
 
@@ -32,8 +32,12 @@ ul {
     border: none;
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
     font-weight: bold;
+}
+.btn:hover {
+    color: rgb(23, 61, 216);
+    transform: translateY(-1.5px);
+    transition: all 200ms ease-in-out;
 }
 
 .btn[data-active] {
@@ -41,16 +45,13 @@ ul {
     color: rgb(44, 82, 231);
 }
 
-.btn:hover {
-    color: rgb(23, 61, 216);
-}
 
 .cards-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 35px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 40px auto;
     max-width: 1140px;
     padding-left: 10px;
     padding-right: 10px;
@@ -69,7 +70,6 @@ ul {
     object-fit: contain;
     object-position: center;
     text-align: center;
-    user-select: none;
     width: 100%;
 }
 .card, .status {
@@ -80,8 +80,11 @@ ul {
 .card_body {
     color: #333;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
     position: relative;
+}
+
+.card_body p, a {
+    font-size: 12px;
 }
 
 .status {
@@ -92,7 +95,6 @@ ul {
     position: absolute;
     right: 4px;
     top: 0;
-    user-select: none;
 }
 .status.status_live {
     border: 2px solid green;
@@ -105,7 +107,6 @@ ul {
 .card_title {
     margin: 4px 0px;
     width: 75%;
-    font-family: 'Roboto', sans-serif;
 }
 
 .card_body p {
@@ -123,4 +124,10 @@ ul {
 }
 .card_link:hover {
     text-decoration: underline;
+}
+
+.card_img img,
+.status {
+    -webkit-user-select: none;
+    user-select: none;
 }

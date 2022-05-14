@@ -1,10 +1,10 @@
-const RICK_API = 'https://rickandmortyapi.com/api'
+// const RICK_API = 'https://rickandmortyapi.com/api'
 
-const getData = async ( type = 'character', amount = 1 ) => {
-    const response = await fetch(`${RICK_API}/${type}/${amount}`);
-    const data = await response.json();
+// const getData = async ( type = 'character', amount = 1 ) => {
+//     const response = await fetch(`${RICK_API}/${type}/${amount}`);
+//     const data = await response.json();
 
-    return data
-}
+//     return data
+// }
 
-getData().then( data => console.log(data))
+// getData().then( data => console.log(data))
