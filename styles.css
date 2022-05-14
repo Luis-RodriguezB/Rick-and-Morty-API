@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-bar {
+    margin-bottom: 40px;
+    padding-top: 50px;
+}
+
+.nav-bar ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.nav-bar ul li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.btn[data-active] {
+    border-bottom: 2px solid rgb(159, 218, 245);
+    color: rgb(44, 82, 231);
+}
+
+.btn:hover {
+    color: rgb(23, 61, 216);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 250px;
+    padding: 5px;
+    width: 320px;
+}
+.card_img img {
+    border-radius: 2.5px;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    text-align: center;
+    user-select: none;
+    width: 100%;
+}
+.card, .status {
+    border-radius: 5px;
+}
+
+
+.card_body {
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+
+.status {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 10px;
+    position: absolute;
+    right: 4px;
+    top: 0;
+    user-select: none;
+}
+.status.status_live {
+    border: 2px solid green;
+    color: green;
+}
+.status.status_death {
+    border: 2px solid red;
+    color: red;
+}
+.card_title {
+    margin: 4px 0px;
+    width: 75%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card_body p {
+    margin-top: 10px;
+}
+
+.card_body p:last-of-type {
+    margin-bottom: 10px;
+}
+
+.card_link {
+    float: right;
+    margin: 4px 10px;
+    text-decoration: none;
+}
+.card_link:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty API</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="nav-bar">
+            <ul>
+                <li><button class="btn btn-selector" data-active type="button">Personajes</button></li>
+                <li><button class="btn" type="button">Ubicaciones</button></li>
+                <li><button class="btn" type="button">Episodios</button></li>
+            </ul>
+        </nav>
+
+        <div class="cards-container">
+
+            <div class="card">
+                <div class="card_img">
+                    <img draggable="false" src="https://i.blogs.es/b6d70c/rick-y-morty/840_560.jpeg" alt="rick">
+                </div>
+                <div class="card_body">
+                    <span class="status status_live">status</span>
+                    <h3 class="card_title">Name</h3>
+                    <p>Especie</p>
+                    <p>Genero</p>
+                    <p>location</p>
+                    <a class="card_link" href="#">Ver más</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card_img">
+                    <img draggable="false" src="https://i.blogs.es/b6d70c/rick-y-morty/840_560.jpeg" alt="rick">
+                </div>
+                <div class="card_body">
+                    <span class="status status_death">status</span>
+                    <h3 class="card_title">Name</h3>
+                    <p>Especie</p>
+                    <p>Genero</p>
+                    <p>location</p>
+                    <a class="card_link" href="#">Ver más</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
