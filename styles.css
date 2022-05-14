@@ -41,7 +41,7 @@ ul {
 }
 
 .btn[data-active] {
-    border-bottom: 2px solid rgb(159, 218, 245);
+    /* border-bottom: 2px solid rgb(159, 218, 245); */
     color: rgb(44, 82, 231);
 }
 
