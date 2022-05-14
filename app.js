@@ -1,5 +1,5 @@
 
-function active({ target }) {
+function activeLink({ target }) {
     document.querySelectorAll('button').forEach( button => {
         delete button.dataset.active;
     });
