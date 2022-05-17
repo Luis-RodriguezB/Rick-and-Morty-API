@@ -32,7 +32,7 @@ async function getCharacters() {
                     <span class="status ${
                       status === "Alive"
                         ? "status_live"
-                        : status === "death"
+                        : status === "Dead"
                         ? "status_death"
                         : "status_unknown"
                     }">${status}</span>
