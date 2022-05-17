@@ -26,7 +26,7 @@ async function getCharacters() {
     let card = `
             <div class="card">
                 <div class="card_img">
-                    <img draggable="false" loading="lazy" src="${image}" alt="${name}">
+                    <img draggable="false" src="${image}" alt="${name}">
                 </div>
                 <div class="card_body">
                     <span class="status ${
