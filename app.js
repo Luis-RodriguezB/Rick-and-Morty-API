@@ -2,6 +2,10 @@ const API = `https://rickandmortyapi.com/api`;
 const cardList = document.getElementById("card_list");
 let arr = [];
 
+window.onload = async function() {
+    await getCharacters();
+}
+
 function activeLink({ target }) {
   document.querySelectorAll("button").forEach((button) => {
     delete button.dataset.active;
@@ -16,7 +20,6 @@ async function getData(type) {
   return data;
 }
 
-getCharacters();
 async function getCharacters() {
   resetData();
   arr = await getData("character")

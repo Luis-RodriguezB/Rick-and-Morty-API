@@ -28,7 +28,7 @@ ul {
 
 .container {
     height: 100%;
-    background-image: linear-gradient(rgba(44, 28, 20, 0), rgba(0, 0, 0, 0.5)), url('https://vistapointe.net/images/rick-and-morty-9.jpg');
+    background-image: linear-gradient(rgba(44, 28, 20, 0), rgba(0, 0, 0, 0.5)), url('./assets/rick-and-morty-bg.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
