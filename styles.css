@@ -8,6 +8,8 @@
     --color-green: green;
     --color-yellow: rgb(219 219 72);
     --dark-grey: #333;
+
+    --font-Permanent-Marker: 'Permanent Marker', cursive;
 }
 
 * {
@@ -68,7 +70,7 @@ ul {
     border: none;
     color: var(--color-white);
     cursor: pointer;
-    font-family: 'Permanent Marker', cursive;
+    font-family: var(--font-Permanent-Marker);
     font-size: 20px;
     font-weight: bold;
     letter-spacing: 3px;
@@ -84,6 +86,45 @@ ul {
     /* border-bottom: 2px solid rgb(159, 218, 245); */
     color: var(--color-black);
 }
+
+.filter_container {
+    display: none;
+    font-family: var(--font-Permanent-Marker);
+    font-size: 18px;
+}
+.filter_container.active {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 400px;
+    margin: 15px auto;
+}
+.filter_container select {
+    font-family: var(--font-Permanent-Marker);
+    background: none;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.filter_container select:focus {
+    border: none;
+    outline: none;
+}
+.filter_container .form_group select:focus {
+    border: none;
+    outline: 2px solid black;
+    border-radius: 4px;
+}
+#filter_by_gender,
+#filter_by_especie {
+    display: none;
+}
+#filter_by_gender.active,
+#filter_by_especie.active {
+    display: block;
+}
+
 
 
 .cards-container {

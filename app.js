@@ -1,9 +1,11 @@
 const API = `https://rickandmortyapi.com/api`;
 const cardList = document.getElementById("card_list");
+const filter_container = document.querySelector('.filter_container');
 let arr = [];
 
 window.onload = async function() {
     await getCharacters();
+    document.getElementById('filter_by_gender').classList.add('active');
 }
 
 function activeLink({ target }) {
@@ -11,6 +13,12 @@ function activeLink({ target }) {
     delete button.dataset.active;
   });
   target.dataset.active = true;
+
+  if (target.textContent.toString() !== 'Characters') {
+    filter_container.classList.remove('active');
+    return;
+  }
+  filter_container.classList.add('active');
 }
 
 async function getData(type) {
@@ -91,4 +99,20 @@ async function getEpisodes() {
 function resetData() {
   arr = [];
   cardList.innerHTML = "";
+}
+
+
+function handleFilterBy() {
+  const value = document.getElementById('filter_by').value;
+  const genderSelect = document.getElementById('filter_by_gender');
+  const especieSelect = document.getElementById('filter_by_especie');
+  genderSelect.classList.remove('active');
+  especieSelect.classList.remove('active');
+
+
+  if (value === 'gender') {
+    genderSelect.classList.add('active');
+    return;
+  }
+  especieSelect.classList.add('active');
 }
