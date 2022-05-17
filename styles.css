@@ -6,6 +6,7 @@
     --color-white: white;
     --color-red: red;
     --color-green: green;
+    --color-yellow: rgb(219 219 72);
     --dark-grey: #333;
 }
 
@@ -99,7 +100,6 @@ ul {
 
 .card {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    min-height: 250px;
     padding: 5px;
     width: 320px;
     background-color: var(--color-white);
@@ -143,6 +143,10 @@ ul {
 .status.status_death {
     border: 2px solid var(--color-red);
     color: var(--color-red);
+}
+.status_unknown {
+    border: 2px solid var(--color-yellow);
+    color: var(--color-yellow);
 }
 .card_title {
     margin: 4px 0px;

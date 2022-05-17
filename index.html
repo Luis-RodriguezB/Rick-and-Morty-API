@@ -15,42 +15,13 @@
     <div class="container">
         <nav class="nav-bar">
             <ul>
-                <li><button onclick="activeLink(event), hello()" class="btn" data-active type="button">Characters</button></li>
-                <li><button onclick="activeLink(event)" class="btn" type="button">Locations</button></li>
-                <li><button onclick="activeLink(event)" class="btn" type="button">Episodes</button></li>
+                <li><button onclick="activeLink(event), getCharacters()" class="btn" data-active type="button">Characters</button></li>
+                <li><button onclick="activeLink(event), getLocations()" class="btn" type="button">Locations</button></li>
+                <li><button onclick="activeLink(event), getEpisodes()" class="btn" type="button">Episodes</button></li>
             </ul>
         </nav>
 
-        <section class="cards-container">
-
-            <div class="card">
-                <div class="card_img">
-                    <img draggable="false" loading="lazy" src="https://i.blogs.es/b6d70c/rick-y-morty/840_560.jpeg" alt="rick">
-                </div>
-                <div class="card_body">
-                    <span class="status status_live">Live</span>
-                    <h3 class="card_title">Name</h3>
-                    <p><strong>Especie</strong>: </p>
-                    <p><strong>Género</strong>: </p>
-                    <p><strong>Location</strong>: </p>
-                    <a class="card_link" href="#">View more</a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card_img">
-                    <img draggable="false" loading="lazy" src="https://i.blogs.es/b6d70c/rick-y-morty/840_560.jpeg" alt="rick">
-                </div>
-                <div class="card_body">
-                    <span class="status status_death">Death</span>
-                    <h3 class="card_title">Name</h3>
-                    <p><strong>Especie</strong>: </p>
-                    <p><strong>Género</strong>: </p>
-                    <p><strong>Location</strong>: </p>
-                    <a class="card_link" href="#">View more</a>
-                </div>
-            </div>
-
+        <section id="card_list" class="cards-container">
         </section>
     </div>
     <script src="app.js"></script>
